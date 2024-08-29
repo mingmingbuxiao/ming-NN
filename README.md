@@ -1,9 +1,7 @@
 ## ming-NN
 
-神经网络头文件库
-
-使用C++17标准，编译时请注意您的编译器版本
-
+一个C++简易神经网络头文件库
+使用C++17标准（编译时请注意您的编译器版本)
 
 
 使用仿照Keras，将各层叠加在一起，已经实现的层包括：
@@ -30,5 +28,42 @@ g++ -std\=c++17 test.cpp
 
 ### 目录结构
 
-> &#x20;
+> &#x20;│  IrisDataset.hpp
+> │  README.md
+> │  test.cpp
+> │
+> ├─.vscode
+> │      settings.json
+> │
+> └─include
+> │  Layer.hpp
+> │  Loss.hpp
+> │  mingNN.hpp
+> │  Optimizer.hpp
+> │  SequentialModel.hpp
+> │  utils.hpp
+> │
+> ├─Layers
+> │      Dense.hpp
+> │      DropOut.hpp
+> │      Input.hpp
+> │      ReLU.hpp
+> │      SoftMax.hpp
+> │
+> ├─lib
+> │  ├─Cmat
+> │  │      Cmat.hpp
+> │  │      common.hpp
+> │  │      matrix.hpp
+> │  │
+> │  └─thread-pool
+> │          BS\_thread\_pool.hpp
+> │          BS\_thread\_pool\_light.hpp
+> │
+> ├─Loss
+> │      CrossEntropy.hpp
+> │      MeanSqure.hpp
+> │
+> └─Optimizers
+> SGD.hpp
 
