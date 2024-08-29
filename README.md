@@ -28,42 +28,58 @@ g++ -std\=c++17 test.cpp
 
 ### 目录结构
 
-> &#x20;│  IrisDataset.hpp
-> │  README.md
-> │  test.cpp
-> │
-> ├─.vscode
-> │      settings.json
-> │
-> └─include
-> │  Layer.hpp
-> │  Loss.hpp
-> │  mingNN.hpp
-> │  Optimizer.hpp
-> │  SequentialModel.hpp
-> │  utils.hpp
-> │
-> ├─Layers
-> │      Dense.hpp
-> │      DropOut.hpp
-> │      Input.hpp
-> │      ReLU.hpp
-> │      SoftMax.hpp
-> │
-> ├─lib
-> │  ├─Cmat
-> │  │      Cmat.hpp
-> │  │      common.hpp
-> │  │      matrix.hpp
-> │  │
-> │  └─thread-pool
-> │          BS\_thread\_pool.hpp
-> │          BS\_thread\_pool\_light.hpp
-> │
-> ├─Loss
-> │      CrossEntropy.hpp
-> │      MeanSqure.hpp
-> │
-> └─Optimizers
-> SGD.hpp
-
+│  IrisDataset.hpp
+│  README.md
+│  test.cpp
+│
+├─.vscode
+│      settings.json
+│
+└─include
+    │  Layer.hpp
+    │  Loss.hpp
+    │  mingNN.hpp
+    │  Optimizer.hpp
+    │  SequentialModel.hpp
+    │  utils.hpp
+    │
+    ├─Layers
+    │      Dense.hpp
+    │      DropOut.hpp
+    │      Input.hpp
+    │      ReLU.hpp
+    │      SoftMax.hpp
+    │
+    │
+    ├─lib
+    │  ├─Cmat
+    │  │      Cmat.hpp
+    │  │      common.hpp
+    │  │      Cmat.hpp
+    │  │      common.hpp
+    │  │      matrix.hpp
+    │  │      common.hpp
+    │  │      matrix.hpp
+    │  │
+    │  │      matrix.hpp
+    │  │
+    │  └─thread-pool
+    │  │
+    │  └─thread-pool
+    │          BS_thread_pool.hpp
+    │          BS_thread_pool_light.hpp
+    │  └─thread-pool
+    │          BS_thread_pool.hpp
+    │          BS_thread_pool_light.hpp
+    │          BS_thread_pool.hpp
+    │          BS_thread_pool_light.hpp
+    │
+    │          BS_thread_pool_light.hpp
+    │
+    │
+    ├─Loss
+    │      CrossEntropy.hpp
+    │      MeanSqure.hpp
+    │
+    └─Optimizers
+            SGD.hpp
