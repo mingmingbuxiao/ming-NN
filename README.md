@@ -24,7 +24,7 @@ g++ -std\=c++17 test.cpp
 
 ## 特点
 
-简易实现Cmat矩阵运算，并使用Mr.Barak Shoshany实现的BS\_thread\_pool线程池库(<https://baraksh.com/>)对矩阵运输进行并行优化
+简易实现Cmat矩阵运算，并行实现使用了Mr.Barak Shoshany实现的BS\_thread\_pool线程池库(<https://baraksh.com/>)
 
 ### 目录结构
 
